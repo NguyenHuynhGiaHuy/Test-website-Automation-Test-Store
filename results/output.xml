@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-05-18T22:30:50.180404" rpa="false" schemaversion="5">
+<suite id="s1" name="Source" source="D:\File Nhu\Kiểm thử phần mềm tự động\Báo cao gk\Cuối kỳ\52100826_52100751_52100842\Source">
+<suite id="s1-s1" name="Test pay" source="D:\File Nhu\Kiểm thử phần mềm tự động\Báo cao gk\Cuối kỳ\52100826_52100751_52100842\Source\Test_pay.robot">
+<test id="s1-s1-t1" name="Check Payment Confirmation Email" line="572">
+<kw name="Login To Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:30:50.397517" level="INFO">Opening browser 'Chrome' to base url 'https://automationteststore.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-18T22:30:50.396436" elapsed="9.033589"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-18T22:30:59.430025" elapsed="0.028995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:30:59.462024" level="INFO">Clicking element '//*[@id="customer_menu_top"]/li/a'.</msg>
+<arg>//*[@id="customer_menu_top"]/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:30:59.460023" elapsed="0.863005"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:31:00.325029" level="INFO">Typing text 'NguyenQuynhNhu' into text field '//*[@id="loginFrm_loginname"]'.</msg>
+<arg>//*[@id="loginFrm_loginname"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:31:00.324028" elapsed="0.107164"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:31:00.432700" level="INFO">Typing password into text field '//*[@id="loginFrm_password"]'.</msg>
+<msg time="2024-05-18T22:31:00.474835" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="loginFrm_password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:31:00.431192" elapsed="0.131669"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:31:00.563859" level="INFO">Clicking button '//*[@id="loginFrm"]/fieldset/button'.</msg>
+<arg>//*[@id="loginFrm"]/fieldset/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:31:00.562861" elapsed="1.049680"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:31:01.613537" level="INFO">Clicking element '//*[@id="categorymenu"]/nav/ul/li[1]/a'.</msg>
+<arg>//*[@id="categorymenu"]/nav/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:31:01.612541" elapsed="0.713854"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2024-05-18T22:30:50.394435" elapsed="11.931960"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:31:02.327402" level="INFO">Simulating Mouse Over on element '//*[@id="customer_menu_top"]/li/a'.</msg>
+<arg>//*[@id="customer_menu_top"]/li/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-18T22:31:02.327402" elapsed="0.299786"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-18T22:31:02.628187" level="INFO">Clicking element '//*[@id="customer_menu_top"]/li/ul/li[6]/a'.</msg>
+<msg time="2024-05-18T22:31:02.808051" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-18T22:31:02.808985" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.208)
+Stacktrace:
+	GetHandleVerifier [0x00007FF715091522+60802]
+	(No symbol) [0x00007FF71500AC22]
+	(No symbol) [0x00007FF714EC7B13]
+	(No symbol) [0x00007FF714F18052]
+	(No symbol) [0x00007FF714F0AE8B]
+	(No symbol) [0x00007FF714F3AB7A]
+	(No symbol) [0x00007FF714F0A7C6]
+	(No symbol) [0x00007FF714F3AD90]
+	(No symbol) [0x00007FF714F5A224]
+	(No symbol) [0x00007FF714F3A923]
+	(No symbol) [0x00007FF714F08FEC]
+	(No symbol) [0x00007FF714F09C21]
+	GetHandleVerifier [0x00007FF7153941BD+3217949]
+	GetHandleVerifier [0x00007FF7153D6157+3488183]
+	GetHandleVerifier [0x00007FF7153CF0DF+3459391]
+	GetHandleVerifier [0x00007FF71514B8E6+823622]
+	(No symbol) [0x00007FF715015FBF]
+	(No symbol) [0x00007FF715010EE4]
+	(No symbol) [0x00007FF715011072]
+	(No symbol) [0x00007FF7150018C4]
+	BaseThreadInitThunk [0x00007FFF93AD257D+29]
+	RtlUserThreadStart [0x00007FFF9410AA48+40]
+</msg>
+<arg>//*[@id="customer_menu_top"]/li/ul/li[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-18T22:31:02.627188" elapsed="0.207677">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.208)
+Stacktrace:
+	GetHandleVerifier [0x00007FF715091522+60802]
+	(No symbol) [0x00007FF71500AC22]
+	(No symbol) [0x00007FF714EC7B13]
+	(No symbol) [0x00007FF714F18052]
+	(No symbol) [0x00007FF714F0AE8B]
+	(No symbol) [0x00007FF714F3AB7A]
+	(No symbol) [0x00007FF714F0A7C6]
+	(No symbol) [0x00007FF714F3AD90]
+	(No symbol) [0x00007FF714F5A224]
+	(No symbol) [0x00007FF714F3A923]
+	(No symbol) [0x00007FF714F08FEC]
+	(No symbol) [0x00007FF714F09C21]
+	GetHandleVerifier [0x00007FF7153941BD+3217949]
+	GetHandleVerifier [0x00007FF7153D6157+3488183]
+	GetHandleVerifier [0x00007FF7153CF0DF+3459391]
+	GetHandleVerifier [0x00007FF71514B8E6+823622]
+	(No symbol) [0x00007FF715015FBF]
+	(No symbol) [0x00007FF715010EE4]
+	(No symbol) [0x00007FF715011072]
+	(No symbol) [0x00007FF7150018C4]
+	BaseThreadInitThunk [0x00007FFF93AD257D+29]
+	RtlUserThreadStart [0x00007FFF9410AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(@onclick, "viewOrder(35466)")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.836382" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${order_info}</var>
+<arg>xpath=//*[@id="maincontainer"]/div/div[1]/div/div/div[1]/table/tbody/tr/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.836382" elapsed="0.001013"/>
+</kw>
+<kw name="Get Line" owner="String">
+<var>${orderID}</var>
+<arg>${order_info}</arg>
+<arg>1</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.837395" elapsed="0.001001"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${orderID_new}</var>
+<arg>"${orderID}".replace("#", "")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.838396" elapsed="0.001014"/>
+</kw>
+<kw name="Get Line" owner="String">
+<var>${E-Mail}</var>
+<arg>${order_info}</arg>
+<arg>7</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.839410" elapsed="0.000000"/>
+</kw>
+<kw name="Get Line" owner="String">
+<var>${Telephone}</var>
+<arg>${order_info}</arg>
+<arg>10</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.840405" elapsed="0.000000"/>
+</kw>
+<kw name="Get Line" owner="String">
+<var>${Fax}</var>
+<arg>${order_info}</arg>
+<arg>13</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.840405" elapsed="0.001005"/>
+</kw>
+<kw name="Get Line" owner="String">
+<var>${Shipping Method}</var>
+<arg>${order_info}</arg>
+<arg>16</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.841410" elapsed="0.000000"/>
+</kw>
+<kw name="Get Line" owner="String">
+<var>${Payment Method}</var>
+<arg>${order_info}</arg>
+<arg>19</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.842404" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>https://www.emailnator.com/10minutemail</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.842404" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.843406" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@id="root"]/div/section/div/div/div[3]/div[1]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.843406" elapsed="0.000998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@name='restoreTextArea']</arg>
+<arg>7ex059n@tmpnator.live</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.845412" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//button[@name='restore']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.846929" elapsed="0.001015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//button[@name='restore']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.847944" elapsed="0.001008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.848952" elapsed="0.000998"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//td[contains(text(), '35466')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.849950" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollBy(0, 2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.850952" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.850952" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//td[contains(text(), '34441')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.851954" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.852967" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${expected_orderID}</var>
+<arg>//td[@class='align_left']/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.852967" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${expected_email}</var>
+<arg>//td[@class='align_left']/strong[3]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.853953" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${expected_telephone}</var>
+<arg>//td[@class='align_left']/strong[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.854951" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${expected_fax}</var>
+<arg>//td[@class='align_left']/strong[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.854951" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${expected_shipping_method}</var>
+<arg>//td[@class='align_left']/strong[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.854951" elapsed="0.001512"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${expected_payment_method}</var>
+<arg>//td[@class='align_left']/strong[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.856463" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${orderID_new}</arg>
+<arg>${expected_orderID}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.856463" elapsed="0.001018"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${E-Mail}</arg>
+<arg>${expected_email}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.857481" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Telephone}</arg>
+<arg>${expected_telephone}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.857481" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Fax}</arg>
+<arg>${expected_fax}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.858486" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Shipping Method}</arg>
+<arg>${expected_shipping_method}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.858486" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Payment Method}</arg>
+<arg>${expected_payment_method}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-05-18T22:31:02.858486" elapsed="0.000000"/>
+</kw>
+<doc>Xác minh rằng email xác nhận thanh toán đã được gửi.</doc>
+<tag>Confirmation</tag>
+<tag>Email</tag>
+<tag>Payment</tag>
+<status status="FAIL" start="2024-05-18T22:30:50.393446" elapsed="12.466052">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.208)
+Stacktrace:
+	GetHandleVerifier [0x00007FF715091522+60802]
+	(No symbol) [0x00007FF71500AC22]
+	(No symbol) [0x00007FF714EC7B13]
+	(No symbol) [0x00007FF714F18052]
+	(No symbol) [0x00007FF714F0AE8B]
+	(No symbol) [0x00007FF714F3AB7A]
+	(No symbol) [0x00007FF714F0A7C6]
+	(No symbol) [0x00007FF714F3AD90]
+	(No symbol) [0x00007FF714F5A224]
+	(No symbol) [0x00007FF714F3A923]
+	(No symbol) [0x00007FF714F08FEC]
+	(No symbol) [0x00007FF714F09C21]
+	GetHandleVerifier [0x00007FF7153941BD+3217949]
+	GetHandleVerifier [0x00007FF7153D6157+3488183]
+	GetHandleVerifier [0x00007FF7153CF0DF+3459391]
+	GetHandleVerifier [0x00007FF71514B8E6+823622]
+	(No symbol) [0x00007FF715015FBF]
+	(No symbol) [0x00007FF715010EE4]
+	(No symbol) [0x00007FF715011072]
+	(No symbol) [0x00007FF7150018C4]
+	BaseThreadInitThunk [0x00007FFF93AD257D+29]
+	RtlUserThreadStart [0x00007FFF9410AA48+40]
+</status>
+</test>
+<status status="FAIL" start="2024-05-18T22:30:50.210204" elapsed="12.652282"/>
+</suite>
+<status status="FAIL" start="2024-05-18T22:30:50.189925" elapsed="12.676135"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Confirmation</stat>
+<stat pass="0" fail="1" skip="0">Email</stat>
+<stat pass="0" fail="1" skip="0">Payment</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Source">Source</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test pay">Source.Test pay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
